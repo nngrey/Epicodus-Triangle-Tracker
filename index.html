@@ -5,24 +5,51 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>html page</title>
+    <title>Triangle Tracker</title>
   </head>
+
   <body>
     <div class="container">
-      <h1>Header</h1>
+      <h1>Is it a Triangle?</h1>
 
-      <form id="id1">
-        <div class="form-group">
-          <label for="label">Form label</label>
-          <input id="id2" type="text">
+      <div class="row">
+        <div class="col-sm-3">
+          <form id="triangle-sides">
+            <div class="form-group">
+              <label for="side1">Enter Side One:</label>
+              <input id="side1" type="text">
+            </div>
+            <div class="form-group">
+              <label for="side2">Enter Side Two:</label>
+              <input id="side2" type="text">
+            </div>
+            <div class="form-group">
+              <label for="side3">Enter Side Three:</label>
+              <input id="side3" type="text">
+            </div>
+
+            <button type="submit" class="btn">Enter</button>
+          </form>
         </div>
+        <div class="col-sm-3">
+          <h2>Equilateral triangles</h2>
+          <ul id="equilateral">
 
-        <button type="submit" class="btn">Enter</button>
-      </form>
-      
-       <div id="id3">
-         <p><span class="someClass"></span></p>
-       </div> 
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h2>Isosceles triangles</h2>
+          <ul id="isosceles">
+
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h2>Scalene triangles</h2>
+          <ul id="scalene">
+
+          </ul>
+        </div>    
+      </div>
     </div>
   </body>
 </html>
